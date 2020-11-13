@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Responsive Accessible Table</title>
+		<link rel="stylesheet" href="accessiblTable.css" />
+	</head>
+	<body>
+		<main>
+			<h1>
+				Responsive and Accessible Table that works without JavaScript
+			</h1>
+			<div role="region" aria-labelledby="tableCaption" tabindex="0">
+				<table id="worldLeaders" class="noJS-version">
+					<caption id="tableCaption">
+						World Leaders and their Currencies
+					</caption>
+					<tbody>
+						<tr>
+							<th>Name</th>
+							<th>Country</th>
+							<th>Currency</th>
+						</tr>
+						<tr>
+							<td>Borris Johnson</td>
+							<td>Britain</td>
+							<td>Pound</td>
+						</tr>
+						<tr>
+							<td>Donald Trump</td>
+							<td>U.S.A</td>
+							<td>Dollar</td>
+						</tr>
+
+						<tr>
+							<td>Justin Trudeau</td>
+							<td>Canada</td>
+							<td>Canadian Dollar</td>
+						</tr>
+
+						<tr>
+							<td>Vladimir Putin</td>
+							<td>Russia</td>
+							<td>Russian Ruble</td>
+						</tr>
+
+						<tr>
+							<td>Sergio Mattarella</td>
+							<td>Italy</td>
+							<td>Euro</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+
+		<script src="responsivetableroselli.js"></script>
+		<script>
+			let table = document.getElementById("worldLeaders");
+			table.classList.remove("noJS-version");
+			table.classList.add("js-version");
+		</script>
+	</body>
+</html>
