@@ -27,9 +27,8 @@ function ResponsiveCellHeaders(elmID) {
     console.log("ResponsiveCellHeaders(): " + e);
   }
 }
-// ResponsiveCellHeaders("Books");
 
-// The following is used by accessibleTable.html
+// Add the responsive cell headers
 ResponsiveCellHeaders("worldLeaders");
 
 // https://adrianroselli.com/2018/02/tables-css-display-properties-and-aria.html
